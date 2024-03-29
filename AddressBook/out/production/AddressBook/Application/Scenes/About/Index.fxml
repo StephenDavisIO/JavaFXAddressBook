@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Scenes.Exit.IndexController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="899.0">
+         <children>
+            <ImageView fitHeight="190.0" fitWidth="209.0" layoutX="567.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Images/stonecutters.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="108.0" layoutY="118.0" text="The Stonecutters" underline="true">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="108.0" layoutY="175.0" text="Stephen K. Davis">
+               <font>
+                  <Font name="System" size="32.0" />
+               </font>
+            </Label>
+            <TextArea editable="false" layoutX="22.0" layoutY="605.0" prefHeight="150.0" prefWidth="830.0" text="This application and all content used in this application are for the sole purpose of learning Java, JavaFX and application development. This application is for Assignment 2 in COMP 2130 at George Brown College. This program and all content used in this program are prohibited from distribution under any circumstance. All references and content used from “The Simpsons” are copyrighted to The Walt Disney Company, and the creator, Matt Groening. None of these materials used are being distributed for profit or not for profit and are solely being used in an educational context. If this usage changes for any reason, either (a) the copyrighted materials WILL be removed immediately or (b) the owners of the copyrighted materials will be contacted for written consent of usage prior to distribution (outside of an educational context)." wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

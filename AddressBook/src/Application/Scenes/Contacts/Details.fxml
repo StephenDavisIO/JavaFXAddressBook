@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="768.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Scenes.Contacts.DetailsController">
+   <children>
+       <HBox alignment="CENTER" prefHeight="50.0" prefWidth="874.0">
+           <children>
+               <Label alignment="CENTER" contentDisplay="CENTER" text="View Contact Details" textAlignment="CENTER">
+                   <font>
+                       <Font name="System Bold" size="30.0" />
+                   </font>
+               </Label>
+           </children>
+       </HBox>
+        <AnchorPane fx:id="detailsStage" prefHeight="668.0" prefWidth="874.0">
+         <children>
+            <Label fx:id="lblFullName" alignment="CENTER" contentDisplay="CENTER" layoutX="75.0" layoutY="44.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="500.0" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="52.0" layoutY="105.0" prefHeight="300.0" prefWidth="500.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="177.0" minWidth="10.0" prefWidth="108.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="360.0" minWidth="10.0" prefWidth="316.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="213.0" text="First Name" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="213.0" text="Last Name" textAlignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="213.0" text="Home Phone" textAlignment="CENTER" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="213.0" text="Work Phone" textAlignment="CENTER" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="213.0" text="Email Address" textAlignment="CENTER" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="213.0" text="Birthday" textAlignment="CENTER" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="213.0" text="Current Age" textAlignment="CENTER" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblFirstName" alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="644.0" textAlignment="CENTER" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblLastName" alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="644.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblHomePhone" alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="644.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblWorkPhone" alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="644.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblEmailAddress" alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="644.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblBirthday" alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="644.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCurrentAge" alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="644.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <TextArea fx:id="lblNotes" editable="false" layoutX="75.0" layoutY="529.0" prefHeight="125.0" prefWidth="750.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="75.0" layoutY="449.0" prefHeight="47.0" prefWidth="140.0" text="Full Address" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lblAddress" editable="false" layoutX="225.0" layoutY="454.0" prefHeight="37.0" prefWidth="600.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="imgContact" fitHeight="250.0" fitWidth="250.0" layoutX="575.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="874.0">
+         <children>
+          <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#editContact" prefHeight="30.0" prefWidth="150.0" text="Edit This Contact">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="75.0" />
+               </HBox.margin>
+            </Button>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#deleteContact" prefHeight="30.0" prefWidth="150.0" text="Delete This Contact">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="75.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
